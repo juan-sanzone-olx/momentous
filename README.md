@@ -6,6 +6,7 @@ Momentous
 - Bower
 
 ##Installation
+In the root directory:
 ```shell
-npm install angular
+bower install
 ```
