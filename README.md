@@ -1,3 +1,11 @@
-# momentous
+Momentous
+------
 
-  # Installation
+##Required
+- NPM
+- Bower
+
+##Installation
+```shell
+npm install angular
+```
