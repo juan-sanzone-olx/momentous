@@ -1,0 +1,51 @@
+.navbar-brand {
+  float: left;
+  padding: @navbar-padding-vertical - 7 @navbar-padding-horizontal;
+  font-size: @font-size-large;
+  line-height: @line-height-computed;
+  height: @navbar-height;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+
+  > img {
+    display: block;
+    height: 100%;
+  }
+
+  @media (min-width: @grid-float-breakpoint) {
+    .navbar > .container &,
+    .navbar > .container-fluid & {
+      margin-left: -@navbar-padding-horizontal;
+    }
+  }
+}
+
+.navbar {
+  ul .form-signin {
+    width: 200px;
+  }
+
+  div .form-signin {
+    padding: 0px 15px;
+    color: @navbar-inverse-color;
+  }
+}
+
+@media (min-width: @grid-float-breakpoint) {
+  .navbar-left  { .pull-left(); }
+  .navbar-right {
+    .pull-right();
+    margin-right: 0px;
+  }
+}
+@media (min-width: @grid-float-breakpoint){
+  .navbar-nav {
+    > li > a {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+  }
+}
