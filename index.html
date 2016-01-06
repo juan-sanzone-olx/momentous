@@ -8,12 +8,11 @@
     <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="bower_components/animate.css/animate.min.css" rel="stylesheet">
 </head>
-<body>
-    <div data-ng-controller="AppCtrl">
-        <section id="navbar" class="no-print" data-ng-include="'views/navbar.html'"></section>
+<body data-ng-controller="AppCtrl">
 
-        <section data-ui-view class="view-container"></section>
-    </div>
+    <div data-ng-include="'views/navbar.html'"></div>
+
+    <div data-ui-view class="container"></div>
 
     <!-- VENDORS -->
     <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
@@ -22,7 +21,11 @@
     <script type="text/javascript" src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
 
     <script type="text/javascript" src="js/app.js"></script>
+
+    <script type="text/javascript" src="js/directives/MenuItem.js"></script>
+
     <script type="text/javascript" src="js/shared/main.js"></script>
+    <script type="text/javascript" src="js/controllers/MenuCtrl.js"></script>
 
     <script type="text/javascript" src="js/routes.js"></script>
 </body>

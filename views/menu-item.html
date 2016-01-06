@@ -1,0 +1,19 @@
+<div class="jumbotron" back-img="{{itemInfo.foto}}">
+    <div class="row">
+        <div class="col-xs-7">
+            <h1>{{itemInfo.nombre}}</h1>
+            <p class="lead">Inicio: {{itemInfo.fechaInicio}}</p>
+            <p class="lead">Fin: {{itemInfo.fechaFin}}</p>
+        </div>
+        <div class="col-xs-5 text-right">
+            <h2>${{itemInfo.precio}}</h2>
+            <a class="btn btn-sm btn-success" href="#" role="button">Mas Info</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 text-right">
+            <a class="btn btn-xs btn-warning" href="#" role="button">Modificar</a>
+            <a class="btn btn-xs btn-danger" href="#" role="button">Borrar</a>
+        </div>
+    </div>
+</div>

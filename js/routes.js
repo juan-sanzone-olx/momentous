@@ -13,7 +13,7 @@ angular.module('app').config([
 		}).state('menu', {
 			url: '',
 			templateUrl: baseRoute + 'menu.html',
-			controller: 'AppCtrl'
+			controller: 'MenuCtrl'
 		});
 	}
 ]);
