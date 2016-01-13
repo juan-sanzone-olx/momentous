@@ -2,7 +2,7 @@
 angular.module('app').config([
 	'$stateProvider', '$urlRouterProvider',
 	function($stateProvider, $urlRouterProvider) {
-		var baseRoute = '/views/';
+		var baseRoute = 'momentous/views/';
 		
 		$urlRouterProvider.otherwise('/menu');
 

@@ -1,23 +1,22 @@
 <div class="page-index-content md-inline-form" >
     <md-content>
         <div layout-gt-xs="row">
-            <md-datepicker ng-model="search.date" md-placeholder="Fecha Inicio" style="padding-top: 1px; margin-right: 1px;"></md-datepicker>
-            <md-input-container style="margin-right: 10px;">
+            <md-datepicker ng-model="search.date" md-placeholder="Fecha Inicio" style="padding-top: 1px; margin-right: 10px;" flex-gt-xs class="md-block">
+            </md-datepicker>
+            <md-input-container style="margin-right: 10px;" flex-gt-xs class="md-block">
                 <label>Horario (hh:mm)</label>
                 <input ng-model="search.hour">
             </md-input-container>
-            <md-input-container style="margin-right: 10px;">
+            <md-input-container style="margin-right: 10px;" flex-gt-xs class="md-block">
                 <label>Precio ($)</label>
                 <input ng-model="search.price">
             </md-input-container>
-            <md-input-container>
+            <md-input-container flex-gt-xs class="md-block">
                 <label>Dia</label>
                 <md-select ng-model="search.day">
                     <md-option ng-repeat="day in days" value="{{day}}">{{day}}</md-option>
                 </md-select>
             </md-input-container>
-        </div>
-        <div layout-gt-xs="row">
         </div>
     </md-content>
 
