@@ -6,7 +6,9 @@
     "bootstrap": "~3.3.6",
     "font-awesome": "4.*",
     "animate.css": "~3.4.0",
-    "angular-ui-router": "~0.2.15"
+    "angular-ui-router": "~0.2.15",
+    "angular-material": "~1.0.1",
+    "moment": "~2.11.1"
   },
   "overrides": {
     "bootstrap": {

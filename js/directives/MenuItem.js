@@ -6,7 +6,12 @@ angular.module('app.directives', [])
 	    scope: {
 	    	itemInfo: '=info'
 	    },
-		templateUrl: './views/menu-item.html'
+		templateUrl: './views/menu-item.html',
+        link: function(scope, element, attrs) {
+            scope.getNumber = function(num) {
+                return new Array(num);   
+            }
+        }
 	};
 }).directive('backImg', function(){
     return function(scope, element, attrs){

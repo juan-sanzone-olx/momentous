@@ -1,19 +1,29 @@
-<div class="jumbotron" back-img="{{itemInfo.foto}}">
+<div class="jumbotron" back-img="{{itemInfo.picture}}">
     <div class="row">
         <div class="col-xs-7">
-            <h1>{{itemInfo.nombre}}</h1>
-            <p class="lead">Inicio: {{itemInfo.fechaInicio}}</p>
-            <p class="lead">Fin: {{itemInfo.fechaFin}}</p>
+            <h1>{{itemInfo.menuName}}</h1>
+            <p class="lead">Inicio: {{itemInfo.dateStart}}</p>
+            <p class="lead">Fin: {{itemInfo.dateEnd}}</p>
         </div>
         <div class="col-xs-5 text-right">
-            <h2>${{itemInfo.precio}}</h2>
-            <a class="btn btn-sm btn-success" href="#" role="button">Mas Info</a>
+            <h2>${{itemInfo.price}}</h2>
+            <a class="btn btn-sm btn-success" href="#{{itemInfo.id}}" role="button" data-toggle="collapse">Mas Info</a>
         </div>
     </div>
     <div class="row">
         <div class="col-md-12 text-right">
             <a class="btn btn-xs btn-warning" href="#" role="button">Modificar</a>
             <a class="btn btn-xs btn-danger" href="#" role="button">Borrar</a>
+        </div>
+    </div>
+    <div class="row collapse" id="{{itemInfo.id}}">
+        <div class="col-md-6">
+            <h4>Descripción</h4>
+            {{itemInfo.desc}}
+            <h4>Puntuacion</h4>
+            <span data-ng-repeat="i in getNumber(itemInfo.score) track by $index">
+                <i class="fa fa-star"></i>
+            </span>
         </div>
     </div>
 </div>
